@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>OIDC Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .vesyl-button {
+        background-color: #000;
+        color: #fff;
+
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+
+        border-radius: 0.25rem;
+        border: 1px solid transparent;
+
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+          Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        letter-spacing: 0.5px;
+
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .vesyl-button:hover {
+        background-color: #2f2f2f;
+      }
+    </style>
+  </head>
+
+  <body class="w-full h-full">
+    <main class="flex items-center justify-center h-full flex-col gap-5">
+      <h2 class="font-semibold text-xl">Connect:</h2>
+
+      <a
+        class="vesyl-button"
+        href="https://auth.test.vesyl.com/auth?client_id=acme-client&response_type=code&state=1234&redirect_uri=https://vesyl.local/callback&scope=openid%20offline_access"
+      >
+        <svg width="25" height="17" viewBox="0 0 50 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M33.3003 0.453231V34L50 17.3005L33.3003 0.453231ZM16.6007 17.3005L33.3003 34H16.7984L0 17.2016L16.7484 0.453231H33.3003L16.6007 17.3005Z"
+            fill="#EDFC33"
+          />
+        </svg>
+        VESYL
+      </a>
+    </main>
+  </body>
+</html>
