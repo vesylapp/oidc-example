@@ -3,8 +3,6 @@ import { readFileSync } from 'fs'
 import { Hono } from 'hono'
 import { fetch } from 'undici'
 
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
-
 const clientId = 'acme-client'
 const baseUrl = 'https://auth.test.vesyl.com/'
 const redirectUri = 'https://vesyl.local/callback'
