@@ -14,6 +14,11 @@ The example uses Node.js, but the same principles apply to any language or frame
 
 To start integrating with VESYL's Authentication service, fist get in touch with us at `developers@vesyl.com` to get your client ID and secret set up.
 
+## Environments
+
+- Test: https://auth.test.vesyl.com
+- Production: https://auth.vesyl.com
+
 ## Introspection
 
 VESYL's Authentication exponses a [token introspection endpoint](https://www.oauth.com/oauth2-servers/token-introspection-endpoint/):
