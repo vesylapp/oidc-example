@@ -13,5 +13,8 @@
   "prettier": {
     "singleQuote": true,
     "semi": false
+  },
+  "volta": {
+    "node": "20.10.0"
   }
 }
